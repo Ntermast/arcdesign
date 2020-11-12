@@ -1,0 +1,61 @@
+
+<div id="fh5co-header">
+	<header id="fh5co-header-section">
+		<div class="container">
+			<div class="nav-header">
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				<h1 id="fh5co-logo"><a href="{% url 'arc:home' %}">Arc Design</a></h1>
+				<!-- START #fh5co-menu-wrap -->
+				<nav id="fh5co-menu-wrap" role="navigation">
+					<ul class="sf-menu" id="fh5co-primary-menu">
+						<li class="active">
+							<a href="{% url 'arc:home' %}">Home</a>
+						</li>
+						<!-- <li>
+							
+							<ul class="fh5co-sub-menu">
+								<li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Build</a></li>
+								<li><a href="http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap" target="_blank">Work</a></li>
+								<li><a href="http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Light</a></li>
+								<li><a href="http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Relic</a></li>
+								<li><a href="http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Display</a></li>
+								<li><a href="http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+							</ul>
+						</li> -->
+						<li>
+							<a href="{% url 'arc:service' %}" class="fh5co-sub-ddown">Services</a>
+							 <ul class="fh5co-sub-menu">
+							 	<li><a href="{% url 'arc:service' %}">Imprimerie</a></li>
+							 	<li><a href="{% url 'arc:service-affichage' %}">Affichage</a></li>
+							 	<li><a href="{% url 'arc:service-decoupage' %}">Découpage</a></li>
+
+								<!-- <li>
+									<a href="#" class="fh5co-sub-ddown">Découpage</a>
+									<ul class="fh5co-sub-menu">
+										<li><a href="http://freehtml5.co/preview/?item=build-free-html5-bootstrap-template" target="_blank">Estampage</a></li>
+										<li><a href="http://freehtml5.co/preview/?item=work-free-html5-template-bootstrap" target="_blank">Graphisme</a></li>
+										<li><a href="	http://freehtml5.co/preview/?item=light-free-html5-template-bootstrap" target="_blank">Scan & Photocopie</a></li>
+										<li><a href="http://freehtml5.co/preview/?item=relic-free-html5-template-using-bootstrap" target="_blank">Finition</a></li>
+										<li><a href="http://freehtml5.co/preview/?item=display-free-html5-template-using-bootstrap" target="_blank">Web & Mobile design</a></li>
+										<li><a href="http://freehtml5.co/preview/?item=sprint-free-html5-template-bootstrap" target="_blank">Sprint</a></li>
+									</ul>
+								</li> -->
+								<li><a href="{% url 'arc:service-estampage' %}">Estampage</a></li>
+								<li><a href="{% url 'arc:service-graphisme' %}">Graphisme</a></li>
+								<!-- <li><a href="#">Scan & Photocopie</a></li>  -->
+								<li><a href="{% url 'arc:service-finition' %}">Finition</a></li>
+								<li><a href="{% url 'arc:service-autocollant' %}">Autocollant</a></li>
+								<li><a href="{% url 'arc:service-grandformat' %}">Grand Format</a></li>
+								<li><a href="{% url 'arc:service-softdesign' %}">Software design</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'arc:about-us' %}">About</a></li>
+						<li><a href="{% url 'arc:blog' %}">Blog</a></li>
+						<li><a href="{% url 'arc:contact-us' %}">Contact</a></li>
+						<li><a href="{% url 'arc:command' %}" class="btn btn-warning small">Passer commande</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+</div>

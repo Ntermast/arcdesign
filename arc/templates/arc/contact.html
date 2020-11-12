@@ -1,0 +1,83 @@
+
+{% extends 'arc/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="fh5co-wrapper">
+	<div id="fh5co-page">
+	
+	{% include "arc/nav/nav.html" %}
+
+
+
+
+		<div class="fh5co-hero fh5co-hero-2">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5" style="background-image: url({% static 'arc/images/contact.jpg' %});">
+				<div class="desc animate-box">
+					<h2><strong>CONTACT-US</strong> </h2>
+				<!-- <span style="color: yellow"><strong>AU SOMMET DU VOLCAN</strong><a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name"></a></span> -->
+				</div>
+			</div>
+		</div>
+		<!-- end:header-top -->
+<div id="fh5co-contact" class="animate-box">
+	<div class="container">
+		<form action="#">
+			<div class="row">
+				<div class="col-md-6">
+					<h3 class="section-title">Our Address</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<ul class="contact-info">
+						<li><i class="icon-location-pin"></i>Goma Ville, Quartier les Volcans, Av. Pelicans/ voir deuxieme rue CDI</li>
+						<li><i class="icon-phone2"></i>(+243) 897073869, 970429069</li>
+						<li><i class="icon-mail"></i><a href="#">arcdesign74@gmail.com</a></li>
+						<li><i class="icon-globe2"></i><a href="#">www.arc-design.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- END fh5co-contact -->
+<!-- <div id="map" class="fh5co-map"></div> -->
+<!--Google map-->
+<!--Google map-->
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://maps.google.com/maps?q=warsaw&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+
+<!-- https://www.google.com/maps/d/u/0/viewer?geocode=FcOu5v8dvEy9AQ&ie=UTF8&t=h&oe=UTF8&dg=feature&msa=0&mid=1puY-C8lCHbsE6dSMEnJ9F3HQqQ4&ll=-1.6711732319636339%2C29.247434619323727&z=13 -->
+
+<!--Google Maps-->
+
+<!-- </div>
+</div> -->
+
+{% include "arc/nav/footer.html" %}
+{% endblock content %}

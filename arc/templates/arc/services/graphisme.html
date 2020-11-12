@@ -1,0 +1,222 @@
+{% extends 'arc/base.html' %}
+{% load static %}
+
+
+{% block customer-style %}
+
+<style>
+  h1{
+    text-align: center;
+    margin: 50px 0 !important;
+    font-family: all;
+  }
+  .panel, .panel-heading{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .panel{
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18) 
+  }
+  .btn-link{
+    width: 100%;
+    height: 35px;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    text-decoration: none !important;
+
+  }
+    .btn-link.collapsed{
+    width: 100%;
+    height: 50px;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    text-decoration: none !important;
+
+  }
+  .panel-body{
+    background-color: #e8eeff
+  }
+  .btn-link:after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    right: 15px;
+    top: 11px;
+    position: absolute;
+    background-color: #e8eeff
+  }
+  .btn-link.collapsed:after{
+    content: '\002B';
+
+  }
+  .btn-link:before{
+    content: '';
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 30px;
+    top: 46px;
+  }
+  #img-collapse{
+    width: 100%;
+    /*height: auto;*/
+    margin-top: 15px;
+  }
+</style>
+
+{% endblock customer-style %}
+
+{% block content %}
+<div id="fh5co-wrapper">
+    <div id="fh5co-page">
+
+        {% include "arc/nav/nav.html" %}
+
+      <div class="fh5co-hero fh5co-hero-2">
+        <div class="fh5co-overlay"></div>
+        <div class="fh5co-cover fh5co-cover_2 text-center" data-stellar-background-ratio="0.5"
+          style="background-image: url({% static 'arc/images/Imprimerie.jpg' %});">
+          <div class="desc animate-box">
+            <h2>GRAPHISME</h2>
+            <span style="letter-spacing: 5px;">POUR TOUS VOS BESOINS D'IMPRESSION</span>
+          </div>
+        </div>
+      </div>
+      <!-- end:header-top -->
+      
+      <!-- <div id="fh5co-services-section" class="fh5co-section-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+              <h3>What We Do</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus
+                asperiores sint consequuntur debitis.</p>
+            </div>
+          </div>
+        </div>
+       
+      </div> -->
+      
+      <div id="fh5co-services">
+        <div class="container">
+          <div class="row row-bottom-padded-lg">
+            <div class="col-md-4 animate-box">
+              <div class="fh5co-icon"> <img class="img-responsive" src="{% static 'arc/images/digital.jpg' %}" alt="Imprimerie-img"></div>
+            </div>
+            <div class="col-md-7 col-md-push-1 animate-box">
+              <!-- 						<h4 class="fh5co-number">01.</h4> -->
+              <h2>IMPRESSION NUMÉRIQUE, IMPRESSION OFFSET, PHOTOCOPIES</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis
+                laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus. Eveniet
+                ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus provident
+                commodi?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae modi earum eligendi eaque quis
+                laudantium aperiam sunt atque recusandae, fugiat veritatis repellendus incidunt nostrum voluptatibus.
+                Eveniet
+                ex magnam repellat sunt molestiae, quibusdam culpa dignissimos recusandae voluptatum necessitatibus
+                provident
+                commodi?
+              </p>
+              <!-- <ul>
+                <li>Web Design</li>
+                <li>Search Engine Optimzation</li>
+                <li>HTML5 &amp; CSS3</li>
+                <li>jQuery Library</li>
+              </ul> -->
+            </div>
+          </div>
+      
+          
+          <h1>Nos services d'Impression</h1>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                
+                 <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <button class="btn btn-link" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                          Collapsible Group Item #1
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                          Collapsible Group Item #2
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                          Collapsible Group Item #3
+                        </button>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6">
+                <img class="img-responsive" id="img-collapse" src="{% static 'arc/images/digital.jpg' %}">
+              </div>
+
+            </div>
+          </div>
+
+          
+
+
+        </div>
+    </div>
+      <!-- END fh5co-services-section -->
+
+    {% include "arc/nav/footer.html" %}
+
+    </div>
+    <!-- END fh5co-page -->
+
+    </div>
+    <!-- END fh5co-wrapper -->
+
+{% endblock content %}
+
+{% block customjs %}
+<script type="text/javascript">
+
+
+</script>
+
+{% endblock customjs %}
